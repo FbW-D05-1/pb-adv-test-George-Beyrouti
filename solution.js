@@ -115,13 +115,10 @@ console.log("===== Task 6 =====");
 const validPin = (PIN) => {
 
   let splittedPin = PIN.split("");
-  
-for  (let i = 0; i < splittedPin.length; i++) { 
-  if (typeof splittedPin[i] !== "number") { console.log("false should only consist of numbers")}
-  
-} 
 
-    
+  
+  splittedPin.every(element => { if (typeof element !== " number ") { console.log("false should only consist of numbers")}
+  }) 
     
   if (splittedPin.length !== 4 ) { console.log("false should be 4 digits");  }
 
